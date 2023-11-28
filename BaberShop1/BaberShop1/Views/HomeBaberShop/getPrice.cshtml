@@ -1,0 +1,23 @@
+﻿
+@model IEnumerable<BaberShop1.Models.SERVICE_SHOP>
+
+<div class="price-list-thumb-wrap">
+    <div class="mb-4">
+        <h2 class="mb-2">Bảng giá</h2>
+
+        <strong>Chỉ với 50.000VNĐ</strong>
+    </div>
+    @foreach (var item in Model)
+    {
+        <div class="price-list-thumb">
+            <h6 class="d-flex p-1">
+                @item.NAME_SERVICE
+                <span class="price-list-thumb-divider"></span>
+
+                <strong>@item.PRICE VND</strong>
+            </h6>
+        </div>
+
+    }
+
+</div>
